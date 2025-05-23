@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "MITS Attendance Tracker - Quick Analysis",
+  "short_name": "MITS Tracker",
+  "version": "1.0.0",
+  
+  "description": "Exclusively for MITSians! Track attendance in one click with instant analytics. This tool eliminates manual calculations, giving MITSians real-time attendance insights at a glance! View your Overall Percentage (Total Attended ÷ Total Conducted × 100) with personalized feedback. Created by Manoj Kumar Pendem (Data Science). ⚡",
+  "permissions": ["activeTab", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["http://mitsims.in/*", "http://mitsims.in/studentIndex.html"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "author": "Manoj Kumar Pendem",
+  "homepage_url": "https://github.com/manojpendem/mits-attendance-tracker"
+}
